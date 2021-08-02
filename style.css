@@ -68,12 +68,17 @@
     position: relative;
     color: white;
     border-radius: 5%;
-    overflow: hidden
+    overflow: hidden;
+    transition: .5s;
 }
 .card-product img{
     height: 100%;
-    width: 100%;
     overflow: hidden;
+    clip: auto;
+}
+.card-product:hover{
+    transform: scale(1.05);
+
 }
 .card-txt{
     width: 100%;
