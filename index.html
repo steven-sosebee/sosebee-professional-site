@@ -5,6 +5,7 @@
         <link rel="stylesheet" href="./style.css">
         <meta charset="UTF-8">
         <title>Steven Sosebee Consulting</title>
+        <meta name="Viewport" content="default-width">
     </head>
     <body>
         <nav id="navbar">
@@ -14,6 +15,7 @@
                 <li>Portfolio</li>
                 <li>Contact Us</li>
                 <li>Endorsements</li>
+                <li>Contact Us</li>
             </ul>
         </nav>
         <section id="splash-row">
@@ -42,30 +44,56 @@
             </p>
             <ul id="services-list">
                 <li class="card-product">
-                    <img class="card-image" id="img-sop"></img>
+                    <div class="img-container">
+                        <img class="card-image" id="img-sop"/></div>
                     <div class="card-txt">
                         <p>Creating and reviewing Standard Operating Procedures (SOPs)</p>
                     </div>
                 </li>
                 <li class="card-product">
-                    <img class="card-image" id="img-training"></img>
+                    <div class="img-container"><img class="card-image" id="img-training"></img></div>
                     <div class="card-txt">
                     <p>Training Staff on identifying and resolving inefficiencies</p>
                     </div>
+                    <div class="card-details">
+                        <h4>Trust your staff</h4>
+                        <p>Your staff know where the issues are in your organization.  They deal with them every day!  They probably 
+                            have their own home brew fixes.  But are these fixes controlled and transferrable?  Or do you have time bombs 
+                            waiting for your key personnell to be away before crippling your operations.  Train your staff on proper change 
+                            techniques and how to transfer knowledge.
+                        </p>
+                    </div>
+                    </div>
                 </li>
                 <li class="card-product">
-                    <img class="card-image" id="img-tools"></img>
+                    <div class="img-container"><img class="card-image" id="img-tools"></img></div>
                     <div class="card-txt">
                     <p>Building tools to automate repetitive work</p>
                     </div>
                 </li>
                 <li class="card-product">
-                    <img class="card-image" id="img-reports"></img>
+                    <div class="img-container"><img class="card-image" id="img-reports"></img></div>
                     <div class="card-txt">
                     <p>Designing reports to help managers make decisions</p>
                     </div>
                 </li>
             </ul>
         </section>
+        <form action="./data.html" method="POST">
+            <ul>
+                <li>
+                    <label for="name">Name: </label>
+                    <input type="text" id="name" name="user_name">
+                </li>
+                <li>
+                    <label for="email">Email: </label>
+                    <input type="email" id="email" name="user_email">
+                </li>
+                <li class="button">
+                    <button type="submit">Submit</button>
+                </li>
+            </ul>
+
+        </form>
     </body>
 </html>
